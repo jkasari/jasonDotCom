@@ -1,0 +1,112 @@
+.sitebody div {
+    border: 1px solid #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #009B77;
+}
+.intro {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10%;
+    padding: 8%;
+    box-sizing: border-box;
+}
+
+.intro div {
+    background-color: rgb(96, 165, 119);
+}
+
+.intropicture {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    aspect-ratio: 5/6;
+}
+
+.portfolioContainer {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-gap: 8%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.portfolioContainer div {
+    padding: 10px;
+    background-color: rgb(96, 165, 119);
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.about {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10%;
+    padding: 8%;
+    box-sizing: border-box;
+}
+
+.about div {
+    background-color: rgb(96, 165, 119);
+}
+
+.aboutpicture {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    aspect-ratio: 5/6;
+}
+
+.contact {
+    width: 100vw;
+    height: 40vh;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+.contact div {
+    background-color: rgb(96, 165, 119);
+}
+
+@media only screen and (max-width: 550px) {
+    .intro {
+        height: auto;
+        grid-gap: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .portfolioContainer {
+        height: 1500px;
+        grid-gap: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .about {
+        height: auto;
+        grid-gap: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
+
