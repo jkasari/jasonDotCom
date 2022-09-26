@@ -17,21 +17,21 @@
 }
 
 .blog_post_title {
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-.blogpoststatues {
-    grid-row-start: 1;
-    grid-row-end: 3;
+.blog_post_status {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-.blogpostproblem {
-    grid-row-start: 1;
-    grid-row-end: 3;
+.blog_post_problem {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-.blogpostsolution {
-    grid-row-start: 1;
-    grid-row-end: 3;
+.blog_post_solution {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
