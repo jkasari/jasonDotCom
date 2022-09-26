@@ -1,0 +1,37 @@
+
+.blog_post_body div {
+    border: 1px solid #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #009B77;
+}
+
+.intro_grid {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    box-sizing: border-box;
+}
+
+.blog_post_title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.blog_post_status {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.blog_post_problem {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.blog_post_solution {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
