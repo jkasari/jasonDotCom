@@ -75,3 +75,35 @@
 .two_picture {
     max-width: 100%;
 }
+
+@media only screen and (max-width: 550px) {
+    .intro_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr .1fr repeat(3, 1fr) repeat(2, .7fr);
+    }
+
+    .intro_picture.p3 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .blog_post_title {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .blog_post_status {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .blog_post_problem {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .blog_post_solution {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
