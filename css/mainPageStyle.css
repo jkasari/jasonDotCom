@@ -21,7 +21,7 @@
     background-color: rgb(96, 165, 119);
 }
 
-.intro_picture {
+.blog_item_picture {
     max-width: 100%;
 }
 
@@ -39,9 +39,12 @@
 .portfolio_container div {
     padding: 10px;
     background-color: rgb(96, 165, 119);
+    
 }
 
-.container {
+.portfolio_tile {
+    text-decoration: none;
+    color: #000000;
     background-image: url(img/test_image_square.jpg);
     background-size: cover;
 }
