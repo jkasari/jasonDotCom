@@ -38,6 +38,7 @@
 .blog_item.picture {
     height: 100%;
     box-shadow: 2px 2px;
+    background-size: cover;
 }
 
 .blog_item.picture.p3 {
