@@ -1,4 +1,4 @@
-let entryNum = 0;
+let entryNum = 1;
 let introBlogItems = Array.from(document.getElementsByClassName("blog_item"));
 
 function createSinglePictureGrid(item) {
@@ -47,6 +47,8 @@ function initBlogValues() {
     introBlogItems[4].style.backgroundImage = "url("+blogPosts[entryNum].IMAGE_3+")";
     introBlogItems[5].innerHTML = blogPosts[entryNum].PROBLEM;
     introBlogItems[6].innerHTML = blogPosts[entryNum].SOLUTION;
+    introBlogItems[7].innerHTML = blogPosts[entryNum].SKILLS_USED;
+    introBlogItems[8].innerHTML = blogPosts[entryNum].FUTURE
     for (item in blogPosts[entryNum]) {
         createSinglePictureGrid(item);
         createTwoPictureGrid(item);

@@ -37,11 +37,15 @@
 }
 
 .blog_item.problem {
+    padding: 1%;
+    text-align: center;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
 .blog_item.solution {
+    padding: 1%;
+    text-align: center;
     grid-column-start: 1;
     grid-column-end: 5;
 }
