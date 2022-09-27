@@ -63,7 +63,7 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 
 .two_picture_text {
@@ -106,5 +106,4 @@
         grid-column-end: 1;
     }
 
-    
 }

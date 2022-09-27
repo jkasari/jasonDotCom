@@ -3,7 +3,7 @@ let portfolioTiles = Array.from(document.getElementsByClassName("portfolio_tile"
 function initPorfolioTiles() {
     portfolioTiles.forEach(tile => {
         tile.innerHTML = blogPosts[0].TITLE;
-        tile.style.backgroundImage = "url("+blogPosts[0].IMAGE_ONE+")";
+        tile.style.backgroundImage = "url("+blogPosts[0].IMAGE_1+")";
         console.log(blogPosts[0].IMAGE_ONE);
     });
 }
