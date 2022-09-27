@@ -5,8 +5,8 @@ const blogPosts = [
         "IMAGE_1": "img/test_image_square.jpg",
         "IMAGE_2": "img/test_image_square.jpg",
         "IMAGE_3": "img/test_image_square.jpg",
-        "PROBLEM": "PROBLEM: This currently doesn't work",
-        "SOLUTION": "SOLUTION: Make it work",
+        "PROBLEM": "This currently doesn't work",
+        "SOLUTION": "Make it work",
         "SKILLS_USED": "Literally used every single skill on the planet",
         "FUTURE": "You never know what the future will hold!",
         "SINGLE_PICTURE_GRID": {
@@ -25,9 +25,9 @@ const blogPosts = [
         "IMAGE_1": "img/building_website_screenshot1.png",
         "IMAGE_2": "img/building_website_screenshot2.png",
         "IMAGE_3": "img/building_website_screenshot3.png",
-        "PROBLEM": "PROBLEM: I need to have a website to display my protfolio. I also stand to benifit from having to build a website",
-        "SOLUTION": "SOLUTION: I'm building one! And learning a bit of web development along the way",
-        "SKILLS_USED": "SKILLS USED: This project like most basic websites is a fun cocktail of html/css/javascript.",
-        "FUTURE": "FUTURE: I really really really want to finish this website so that I never have to touch web dev again",
+        "PROBLEM": "I need to have a website to display my protfolio. I also despise web development on the upmost level",
+        "SOLUTION": "I'm building one! And learning a bit of web development along the way",
+        "SKILLS_USED": "This project like most basic websites is a fun cocktail of html/css/javascript.",
+        "FUTURE": "I really really really want to finish this website so that I never have to touch web dev again",
     }
 ];
