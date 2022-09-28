@@ -1,16 +1,26 @@
-.site_body div {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    background-color: #a4b4b0;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.site_body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(155, 219, 182);
+}
+
+.site_body img {
+    border-radius: 1%;
+    width: 100%;
 }
 
 .site_body p {
-    padding: 5%;
-    font-size: 20px;
+    font-size: 120%;
 }
 
 .site_body h1 {
-    font-size: 60;
+    font-style: oblique;
+    font-size: 80px;
+    border-bottom: #000000 solid 10px;
 }
 
 .intro {
@@ -24,8 +34,24 @@
     box-sizing: border-box;
 }
 
-.intro_picture {
-    max-width: 100%;
+.intro_text_container {
+    padding-top: 10%;
+}
+
+.name {
+    font-size: 500%;
+    padding-left: 5%;
+}
+
+.intro_text {
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.intro_picture_container {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .portfolio_container {
@@ -33,15 +59,10 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr;
     grid-gap: 5%;
-    padding: 5%;
+    padding: 2%;
     box-sizing: border-box;
-}
-
-.portfolio_container div {
-    padding: 10px;
-    
 }
 
 .portfolio_tile {
@@ -51,11 +72,14 @@
     font-size: 20px;
     background-image: url(img/test_image_square.jpg);
     background-size: cover;
+    box-shadow: 5px 4px 8px #000000;
 }
 
 .portfolio_tile:hover {
-    color:#a4b4b0;
-    font-size: 35px;
+    color:#ffffff;
+    filter: blur(1px);
+    transition: all .1s ease-in-out;
+    font-size: 50px;
 }
 
 .header {
@@ -68,14 +92,15 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr .5fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: .5fr 5fr;
     grid-gap: 5%;
-    padding: 8%;
+    padding-left: 2%;
     box-sizing: border-box;
 }
 
-.about_picture {
-    max-width: 100%;
+.about_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .contact {
@@ -84,6 +109,10 @@
     padding: 30px;
     box-sizing: border-box;
 
+}
+
+.contact_text {
+    padding-top: 2%;
 }
 
 @media only screen and (max-width: 550px) {

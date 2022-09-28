@@ -1,4 +1,5 @@
 sessionStorage.setItem("entry", "0");
+indexHash = {};
 
 function shuffle(arr) {
     let currentIndex = arr.length, randomIndex;
@@ -17,14 +18,19 @@ function initPorfolioTiles() {
     let portfolioTiles = Array.from(document.getElementsByClassName("portfolio_tile"));
     portfolioTiles.forEach(tile => {
         index = portfolioTiles.indexOf(tile);
-        tile.innerHTML = blogPosts[index].TITLE;
-        tile.style.backgroundImage = "url("+blogPosts[index].IMAGE_1+")";
-        tile.addEventListener("click", sessionStorage.setItem("entry", blogPosts[index].ID));
+        tile.innerHTML = shuffledBlogs[index].TITLE;
+        tile.style.backgroundImage = "url("+shuffledBlogs[index].IMAGE_1+")";
+        tile.id = shuffledBlogs[index].ID;
+        tile.addEventListener("mouseover", e => {
+            console.log(e.target.id);
+            sessionStorage.setItem("entry", e.target.id);
+        });
     });
 }
 
 function initMainText() {
     document.getElementById("intro_picture").src = mainText.MAIN_IMAGE;
+    document.getElementById("about_picture").src = mainText.ABOUT_IMAGE;
     document.getElementById("intro_text").innerHTML = mainText.SAMPLE_TEXT;
     document.getElementById("about_text").innerHTML = mainText.SAMPLE_TEXT;
     document.getElementById("contact_text").innerHTML = mainText.SAMPLE_TEXT;
