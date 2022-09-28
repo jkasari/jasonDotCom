@@ -1,5 +1,7 @@
-let entryNum = 1;
 let introBlogItems = Array.from(document.getElementsByClassName("blog_item"));
+let entryNum = sessionStorage.getItem("entry");
+//let entryNum = 0; 
+console.log(entryNum);
 
 function createSinglePictureGrid(item) {
     if (item.includes("SINGLE_PICTURE_GRID")) {
