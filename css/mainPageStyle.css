@@ -1,9 +1,16 @@
 .site_body div {
-    border: 1px solid #000000;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    background-color: #a4b4b0;
+}
+
+.site_body p {
+    padding: 5%;
     font-size: 20px;
-    background-color: #009B77;
+}
+
+.site_body h1 {
+    font-size: 60;
 }
 
 .intro {
@@ -17,11 +24,7 @@
     box-sizing: border-box;
 }
 
-.intro div {
-    background-color: rgb(96, 165, 119);
-}
-
-.blog_item_picture {
+.intro_picture {
     max-width: 100%;
 }
 
@@ -38,15 +41,21 @@
 
 .portfolio_container div {
     padding: 10px;
-    background-color: rgb(96, 165, 119);
     
 }
 
 .portfolio_tile {
     text-decoration: none;
     color: #000000;
+    padding: 5%;
+    font-size: 20px;
     background-image: url(img/test_image_square.jpg);
     background-size: cover;
+}
+
+.portfolio_tile:hover {
+    color:#a4b4b0;
+    font-size: 35px;
 }
 
 .header {
@@ -65,10 +74,6 @@
     box-sizing: border-box;
 }
 
-.about div {
-    background-color: rgb(96, 165, 119);
-}
-
 .about_picture {
     max-width: 100%;
 }
@@ -79,10 +84,6 @@
     padding: 30px;
     box-sizing: border-box;
 
-}
-
-.contact div {
-    background-color: rgb(96, 165, 119);
 }
 
 @media only screen and (max-width: 550px) {
