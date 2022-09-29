@@ -110,7 +110,7 @@
 }
 
 .portfolio_tile p:hover {
-    color: black;
+    color: var(--c1-color);
     background-color: var(--c2-color);
 }
 
