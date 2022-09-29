@@ -2,6 +2,7 @@ const blogPosts = [
     {
         "ID": "0",
         "TITLE": "Test Blog Post 1",
+        "TILE_TEXT": "- A small blerb about that thing I did.",
         "STATUS": "Status good",
         "IMAGE_1": "../img/fire.jpg",
         "IMAGE_2": "../img/test_image_square.jpg",
@@ -23,6 +24,7 @@ const blogPosts = [
     {
         "ID": "1",
         "TITLE": "First Entry",
+        "TILE_TEXT": "- A small blerb about that thing I did.",
         "STATUS": "Under Construction",
         "IMAGE_1": "../img/building_website_screenshot1.png",
         "IMAGE_2": "../img/building_website_screenshot2.png",
@@ -35,6 +37,7 @@ const blogPosts = [
     {
         "ID": "2",
         "TITLE": "Trail Building",
+        "TILE_TEXT": "- A small blerb about that thing I did.",
         "STATUS": "On Going",
         "IMAGE_1": "../img/trail_building_washington/moss_remove.jpg",
         "IMAGE_2": "../img/trail_building_washington/grimice1.jpg",
@@ -56,6 +59,7 @@ const blogPosts = [
     {
         "ID": "3",
         "TITLE": "Community Outreach",
+        "TILE_TEXT": "- A small blerb about that thing I did.",
         "STATUS": "Status good",
         "IMAGE_1": "../img/community_outreach.PNG",
         "IMAGE_2": "../img/fire.jpg",
@@ -77,6 +81,7 @@ const blogPosts = [
     {
         "ID": "4",
         "TITLE": "Riding in Desert",
+        "TILE_TEXT": "- A small blerb about that thing I did.",
         "STATUS": "Status good",
         "IMAGE_1": "../img/bike_desert.JPEG",
         "IMAGE_2": "../img/bike_jumping.jpg",
@@ -98,6 +103,7 @@ const blogPosts = [
     {
         "ID": "5",
         "TITLE": "Binary Clock",
+        "TILE_TEXT": "- A small blerb about that thing I did.",
         "STATUS": "Status good",
         "IMAGE_1": "../img/clock.gif",
         "IMAGE_2": "../img/building_website_screenshot1.png",

@@ -17,15 +17,29 @@ function initPorfolioTiles() {
     shuffledBlogs = shuffle(blogPosts);
     let portfolioTiles = Array.from(document.getElementsByClassName("portfolio_tile"));
     portfolioTiles.forEach(tile => {
+        const tileText = document.createElement("p");
         index = portfolioTiles.indexOf(tile);
-        tile.innerHTML = shuffledBlogs[index].TITLE;
+        tileText.innerHTML = shuffledBlogs[index].TITLE;
+        tileText.id = shuffledBlogs[index].ID;
+        tile.appendChild(tileText);
         tile.style.backgroundImage = "url("+shuffledBlogs[index].IMAGE_1+")";
-        tile.id = shuffledBlogs[index].ID;
-        tile.addEventListener("mouseover", e => {
-            console.log(e.target.id);
+        tile.addEventListener("click", e => {
             sessionStorage.setItem("entry", e.target.id);
+            //tile.addEventListener("mouseover", coverBlock(e));
+            //tile.addEventListener("mouseleave", removeCover(e));
         });
     });
+}
+
+function coverBlock(e) {
+    tile = document.getElementById(e.target.id);
+    tile.style.backgroundImage = "none";
+    console.log("Cover on -> " + parent.id)
+}
+
+function removeCover(e) {
+    parent = document.getElementById(e.target.id);
+    console.log("Cover off -> " + parent.id)
 }
 
 function initMainText() {
