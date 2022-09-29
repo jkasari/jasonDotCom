@@ -1,3 +1,9 @@
+:root {
+    --c1-color: #202d31;
+    --c2-color: rgb(184, 211, 35);
+    --c3-color: rgb(199, 202, 204);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,24 +11,26 @@
 
 .site_body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(221, 220, 219);
+    background-color: var(--c1-color);
 }
 
 .site_body img {
     border-radius: 1%;
     width: 100%;
-    box-shadow: 7px 7px rgb(184, 211, 35);
+    box-shadow: 7px 7px var(--c2-color);
 }
 
 .site_body p {
+    color: var(--c3-color);
     font-size: 120%;
 }
 
 .site_body h1 {
     font-style: oblique;
+    color: var(--c3-color);
     font-size: 40px;
     padding-left: 10%;
-    border-bottom: rgb(184, 211, 35) solid 10px;
+    border-bottom: var(--c2-color) solid 10px;
 }
 
 .intro {
@@ -34,6 +42,7 @@
     grid-gap: 5%;
     padding: 3%;
     box-sizing: border-box;
+    background-color: var(--c3-color);
 }
 
 .intro_text_container {
@@ -43,11 +52,13 @@
 .name {
     font-size: 600%;
     padding: 3%;
+    color: var(--c1-color);
 }
 
 .intro_text {
+    color: var(--c1-color);
     padding: 3%;
-    border: rgb(184, 211, 35) solid 10px;
+    border: var(--c2-color) solid 10px;
     border-radius: 1%;
 }
 
@@ -55,6 +66,15 @@
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.header {
+    font-style: oblique;
+    font-size: 40px;
+    padding-left: 10%;
+    border-bottom: var(--c2-color) solid 10px;
+    background-color: var(--c3-color);
+    color: var(--c1-color);
 }
 
 .portfolio_container {
@@ -66,29 +86,34 @@
     grid-gap: 5%;
     padding: 5%;
     box-sizing: border-box;
+    background-image: url("../img/test_image_background.png");
+    background-size: cover;
 }
 
 .portfolio_tile {
     text-decoration: none;
     color: transparent;
-    padding: 5%;
+    padding: 2%;
     font-size: 20px;
     background-image: url(img/test_image_square.jpg);
     background-size: cover;
-    box-shadow: 7px 7px rgb(184, 211, 35);
+    box-shadow: 7px 7px var(--c2-color);
 }
 
-.portfolio_tile:hover {
-    color:#ffffff;
-    filter: blur(1px);
-    transition: all .1s ease-in-out;
+.portfolio_tile p {
+    color: transparent;
+    background-color: transparent;
     font-size: 50px;
+    width: 100%;
+    padding: 4%;
+    height: 100%;
 }
 
-.header {
-    grid-column-start: 1;
-    grid-column-end: 4;
+.portfolio_tile p:hover {
+    color: var(--c1-color);
+    background-color: var(--c2-color);
 }
+
 
 .about {
     width: 100vw;
