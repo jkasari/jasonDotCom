@@ -13,9 +13,9 @@ function createSinglePictureGrid(item) {
         image.className = "one_picture";
         text.innerHTML = blogPosts[entryNum].SINGLE_PICTURE_GRID.TEXT;
         grid.appendChild(image);
-        grid.appendChild(text);
         gridContainer = document.getElementById("picture_grids");
         gridContainer.appendChild(grid);
+        gridContainer.appendChild(text);
     }
 }
 
@@ -34,9 +34,9 @@ function createTwoPictureGrid() {
         text.innerHTML = blogPosts[entryNum].TWO_PICTURE_GRID.TEXT;
         grid.appendChild(image1);
         grid.appendChild(image2);
-        grid.appendChild(text);
         gridContainer = document.getElementById("picture_grids");
         gridContainer.appendChild(grid);
+        gridContainer.appendChild(text);
     }
     return 0;
 }

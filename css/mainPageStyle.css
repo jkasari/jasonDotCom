@@ -1,9 +1,28 @@
-.site_body div {
-    border: 1px solid #000000;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #009B77;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.site_body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(221, 220, 219);
+}
+
+.site_body img {
+    border-radius: 1%;
+    width: 100%;
+    box-shadow: 7px 7px rgb(184, 211, 35);
+}
+
+.site_body p {
+    font-size: 120%;
+}
+
+.site_body h1 {
+    font-style: oblique;
+    font-size: 40px;
+    padding-left: 10%;
+    border-bottom: rgb(184, 211, 35) solid 10px;
 }
 
 .intro {
@@ -17,12 +36,25 @@
     box-sizing: border-box;
 }
 
-.intro div {
-    background-color: rgb(96, 165, 119);
+.intro_text_container {
+    padding-top: 5%;
 }
 
-.blog_item_picture {
-    max-width: 100%;
+.name {
+    font-size: 600%;
+    padding: 3%;
+}
+
+.intro_text {
+    padding: 3%;
+    border: rgb(184, 211, 35) solid 10px;
+    border-radius: 1%;
+}
+
+.intro_picture_container {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .portfolio_container {
@@ -30,23 +62,27 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 5%;
     padding: 5%;
     box-sizing: border-box;
 }
 
-.portfolio_container div {
-    padding: 10px;
-    background-color: rgb(96, 165, 119);
-    
-}
-
 .portfolio_tile {
     text-decoration: none;
-    color: #000000;
+    color: transparent;
+    padding: 5%;
+    font-size: 20px;
     background-image: url(img/test_image_square.jpg);
     background-size: cover;
+    box-shadow: 7px 7px rgb(184, 211, 35);
+}
+
+.portfolio_tile:hover {
+    color:#ffffff;
+    filter: blur(1px);
+    transition: all .1s ease-in-out;
+    font-size: 50px;
 }
 
 .header {
@@ -59,18 +95,15 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr .5fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 5fr;
     grid-gap: 5%;
-    padding: 8%;
+    padding: 5%;
     box-sizing: border-box;
 }
 
-.about div {
-    background-color: rgb(96, 165, 119);
-}
-
-.about_picture {
-    max-width: 100%;
+.about_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .contact {
@@ -81,23 +114,27 @@
 
 }
 
-.contact div {
-    background-color: rgb(96, 165, 119);
+.contact_text {
+    padding-top: 2%;
 }
 
 @media only screen and (max-width: 550px) {
     .intro {
         height: auto;
-        grid-gap: 5%;
+        display: block;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
     }
 
     .portfolio_container {
-        height: 1500px;
-        grid-gap: 5%;
+        grid-gap: 3%;
+        height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: .2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .portfolio_tile {
+        height: 20vh;
     }
 
     .header {
@@ -110,6 +147,9 @@
         grid-gap: 5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
+    }
+    .about_title {
+        margin-top: 45%;
     }
 }
 
