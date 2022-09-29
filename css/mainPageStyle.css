@@ -11,6 +11,7 @@
 .site_body img {
     border-radius: 1%;
     width: 100%;
+    box-shadow: 7px 7px rgb(184, 211, 35);
 }
 
 .site_body p {
@@ -61,20 +62,20 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 5%;
-    padding: 2%;
+    padding: 5%;
     box-sizing: border-box;
 }
 
 .portfolio_tile {
     text-decoration: none;
-    color: #000000;
+    color: transparent;
     padding: 5%;
     font-size: 20px;
     background-image: url(img/test_image_square.jpg);
     background-size: cover;
-    box-shadow: 5px 4px 8px #000000;
+    box-shadow: 7px 7px rgb(184, 211, 35);
 }
 
 .portfolio_tile:hover {
@@ -94,9 +95,9 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr .5fr;
-    grid-template-rows: 62px 5fr;
+    grid-template-rows: 5fr;
     grid-gap: 5%;
-    padding-left: 2%;
+    padding: 5%;
     box-sizing: border-box;
 }
 
@@ -120,16 +121,20 @@
 @media only screen and (max-width: 550px) {
     .intro {
         height: auto;
-        grid-gap: 5%;
+        display: block;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
     }
 
     .portfolio_container {
-        height: 1500px;
-        grid-gap: 5%;
+        grid-gap: 3%;
+        height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: .2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .portfolio_tile {
+        height: 20vh;
     }
 
     .header {
@@ -142,6 +147,9 @@
         grid-gap: 5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
+    }
+    .about_title {
+        margin-top: 45%;
     }
 }
 
