@@ -74,9 +74,8 @@
 .one_picture_grid {
     width: 100vw;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr;
+    display: flex;
+    justify-content: center;
 }
 
 .one_picture {
@@ -88,12 +87,7 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-}
-
-.two_picture_text {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-template-rows: 1fr;
 }
 
 .two_picture {
@@ -102,10 +96,10 @@
 
 @media only screen and (max-width: 550px) {
     .intro_grid {
+        height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr .1fr repeat(3, 3fr);
+        grid-template-rows: 1fr .2fr repeat(3, 200px);
     }
-
     .blog_item.status {
         padding: 0;
     }
