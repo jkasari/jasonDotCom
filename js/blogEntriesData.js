@@ -2,6 +2,7 @@ const blogPosts = [
     {
         "ID": "0",
         "TITLE": "Marine Cytometery",
+        "TITLE_COLOR": "#C7CACC",
         "TILE_TEXT": "- A small blerb about that thing I did.",
         "TILE_IMAGE": "../img/marcy/lights_on_good.jpg",
         "HEADER_IMAGE": "../imgtest_background.png",
