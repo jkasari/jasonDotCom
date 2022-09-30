@@ -1,6 +1,3 @@
-sessionStorage.setItem("entry", "0");
-indexHash = {};
-
 function shuffle(arr) {
     let currentIndex = arr.length, randomIndex;
     while (currentIndex != 0) {
@@ -14,13 +11,14 @@ function shuffle(arr) {
 }
 
 // Its a monstor!! I hate java script and haven't been commenting because I don't want to think about how bad my code is.
-function initPorfolioTiles() {
+function initPortfolioTiles() {
     shuffledBlogs = shuffle(blogPosts);
     let portfolioTiles = Array.from(document.getElementsByClassName("portfolio_tile"));
     portfolioTiles.forEach(tile => {
         const tileCover = document.createElement("div");
         const tileTitle = document.createElement("h4");
         const tileText = document.createElement("h3");
+        console.log(tile);
         index = portfolioTiles.indexOf(tile);
         tileTitle.innerHTML = shuffledBlogs[index].TITLE;
         tileText.innerHTML = shuffledBlogs[index].TILE_TEXT;
@@ -31,24 +29,11 @@ function initPorfolioTiles() {
         tileCover.appendChild(tileText);
         console.log(tileCover);
         tile.appendChild(tileCover);
-        tile.style.backgroundImage = "url("+shuffledBlogs[index].IMAGE_1+")";
+        tile.style.backgroundImage = "url("+shuffledBlogs[index].TILE_IMAGE+")";
         tileCover.addEventListener("click", e => {
             sessionStorage.setItem("entry", e.target.id);
-            //tile.addEventListener("mouseover", coverBlock(e));
-            //tile.addEventListener("mouseleave", removeCover(e));
         });
     });
-}
-
-function coverBlock(e) {
-    tile = document.getElementById(e.target.id);
-    tile.style.backgroundImage = "none";
-    console.log("Cover on -> " + parent.id)
-}
-
-function removeCover(e) {
-    parent = document.getElementById(e.target.id);
-    console.log("Cover off -> " + parent.id)
 }
 
 function initMainText() {
@@ -57,7 +42,9 @@ function initMainText() {
     document.getElementById("intro_text").innerHTML = mainText.SAMPLE_TEXT;
     document.getElementById("about_text").innerHTML = mainText.SAMPLE_TEXT;
     document.getElementById("contact_text").innerHTML = mainText.SAMPLE_TEXT;
-    initPorfolioTiles();
+    initPortfolioTiles();
 }
 
-initMainText();
+if (document.URL.includes("main")) {
+    initMainText();
+}
