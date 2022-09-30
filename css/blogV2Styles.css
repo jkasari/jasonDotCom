@@ -10,7 +10,7 @@
 }
 
 html {
-    background-color: var(--c3-color);
+    background-color: var(--c1-color);
 }
 
 .header {
@@ -34,17 +34,37 @@ html {
     font-size: 500%;
 }
 
-.footer {
-    width: 100vw;
-    height: auto;
+.content_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 20% 0% 20%;
 }
 
-.footer_title {
-    padding: 1% 1% 0% 10%;
+.content_container img {
+    max-width: 100%;
+}
+
+.content_container h1 {
+    max-width: 100%;
+    background-color: var(--c3-color);
     color: var(--c1-color);
+    padding: 1% 1% 1% 5%;
     border-bottom: var(--c1-color) solid 5px;
 }
 
+.content_container p {
+    max-width: 100%;
+    background-color: var(--c3-color);
+    color: var(--c1-color);
+    padding: 3% 5% 3% 5%;
+    text-indent: 5%;
+}
+
+.footer {
+    width: 100vw;
+    height: auto;
+    border-top: var(--c2-color) solid 10px;
+}
 .footer_tiles {
     width: 100%;
     height: 40vh;
@@ -64,24 +84,29 @@ html {
 .portfolio_tile div {
     background-color: transparent;
     border: transparent;
-    width: 100%;
-    padding: 4%;
+    width: 93%;
     height: 100%;
+    padding: 4%;
+    margin: 2%;
     transition: .4s linear;
 }
 
 .portfolio_tile div:hover {
-    color: var(--c1-color);
+    color: var(-c3-color);
     background-color: var(--c2-color);
 }
 
-.portfolio_tile div:hover h4 {
-    font-size: 220%;
-    border-bottom: var(--c1-color) solid 5px;
+.portfolio_tile div h4 {
     padding: 2% 2% 3% 2%;
+    font-size: 220%;
+    border-bottom: transparent solid 5px;
+}
+
+.portfolio_tile div:hover h4 {
+    border-bottom: var(-c3-color) solid 5px;
 } 
 
-.portfolio_tile div:hover h3 {
+.portfolio_tile div h3 {
     font-size: 80%;
     padding: 5% 2% 2% 2%;
 }
