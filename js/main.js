@@ -1,6 +1,3 @@
-sessionStorage.setItem("entry", "0");
-indexHash = {};
-
 function shuffle(arr) {
     let currentIndex = arr.length, randomIndex;
     while (currentIndex != 0) {
@@ -31,24 +28,11 @@ function initPorfolioTiles() {
         tileCover.appendChild(tileText);
         console.log(tileCover);
         tile.appendChild(tileCover);
-        tile.style.backgroundImage = "url("+shuffledBlogs[index].IMAGE_1+")";
+        tile.style.backgroundImage = "url("+shuffledBlogs[index].TILE_IMAGE+")";
         tileCover.addEventListener("click", e => {
             sessionStorage.setItem("entry", e.target.id);
-            //tile.addEventListener("mouseover", coverBlock(e));
-            //tile.addEventListener("mouseleave", removeCover(e));
         });
     });
-}
-
-function coverBlock(e) {
-    tile = document.getElementById(e.target.id);
-    tile.style.backgroundImage = "none";
-    console.log("Cover on -> " + parent.id)
-}
-
-function removeCover(e) {
-    parent = document.getElementById(e.target.id);
-    console.log("Cover off -> " + parent.id)
 }
 
 function initMainText() {
