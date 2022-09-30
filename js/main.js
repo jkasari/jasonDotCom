@@ -13,17 +13,26 @@ function shuffle(arr) {
     return arr;
 }
 
+// Its a monstor!! I hate java script and haven't been commenting because I don't want to think about how bad my code is.
 function initPorfolioTiles() {
     shuffledBlogs = shuffle(blogPosts);
     let portfolioTiles = Array.from(document.getElementsByClassName("portfolio_tile"));
     portfolioTiles.forEach(tile => {
-        const tileText = document.createElement("p");
+        const tileCover = document.createElement("div");
+        const tileTitle = document.createElement("h4");
+        const tileText = document.createElement("h3");
         index = portfolioTiles.indexOf(tile);
-        tileText.innerHTML = shuffledBlogs[index].TITLE;
+        tileTitle.innerHTML = shuffledBlogs[index].TITLE;
+        tileText.innerHTML = shuffledBlogs[index].TILE_TEXT;
+        tileCover.id = shuffledBlogs[index].ID;
+        tileTitle.id = shuffledBlogs[index].ID;
         tileText.id = shuffledBlogs[index].ID;
-        tile.appendChild(tileText);
+        tileCover.appendChild(tileTitle);
+        tileCover.appendChild(tileText);
+        console.log(tileCover);
+        tile.appendChild(tileCover);
         tile.style.backgroundImage = "url("+shuffledBlogs[index].IMAGE_1+")";
-        tile.addEventListener("click", e => {
+        tileCover.addEventListener("click", e => {
             sessionStorage.setItem("entry", e.target.id);
             //tile.addEventListener("mouseover", coverBlock(e));
             //tile.addEventListener("mouseleave", removeCover(e));

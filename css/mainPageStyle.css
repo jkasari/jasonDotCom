@@ -1,8 +1,13 @@
 :root {
     --c1-color: #202d31;
-    --c2-color: rgb(184, 211, 35);
+    --c2-color: rgb(241, 203, 36);
     --c3-color: rgb(199, 202, 204);
 }
+
+/*color options
+light grey (126, 156, 172)
+light green (176, 228, 81)
+*/
 
 * {
     padding: 0;
@@ -93,27 +98,37 @@
 .portfolio_tile {
     text-decoration: none;
     color: transparent;
-    padding: 2%;
     font-size: 20px;
+    padding: 2%;
     background-image: url(img/test_image_square.jpg);
     background-size: cover;
     box-shadow: 7px 7px var(--c2-color);
 }
 
-.portfolio_tile p {
-    color: transparent;
+.portfolio_tile div {
     background-color: transparent;
-    font-size: 50px;
+    border: transparent;
     width: 100%;
     padding: 4%;
     height: 100%;
+    transition: .4s linear;
 }
 
-.portfolio_tile p:hover {
+.portfolio_tile div:hover {
     color: var(--c1-color);
     background-color: var(--c2-color);
 }
 
+.portfolio_tile div:hover h4 {
+    font-size: 220%;
+    border-bottom: var(--c1-color) solid 5px;
+    padding: 2% 2% 3% 2%;
+} 
+
+.portfolio_tile div:hover h3 {
+    font-size: 80%;
+    padding: 5% 2% 2% 2%;
+}
 
 .about {
     width: 100vw;
@@ -122,8 +137,9 @@
     grid-template-columns: 1fr .5fr;
     grid-template-rows: 5fr;
     grid-gap: 5%;
-    padding: 5%;
+    padding: 3%;
     box-sizing: border-box;
+    text-indent: 50px;
 }
 
 .about_title {
@@ -140,7 +156,7 @@
 }
 
 .contact_text {
-    padding-top: 2%;
+    padding: 3%;
 }
 
 @media only screen and (max-width: 550px) {
