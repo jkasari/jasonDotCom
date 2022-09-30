@@ -1,8 +1,13 @@
 :root {
     --c1-color: #202d31;
-    --c2-color: rgb(184, 211, 35);
+    --c2-color: rgb(241, 203, 36);
     --c3-color: rgb(199, 202, 204);
 }
+
+/*color options
+light grey (126, 156, 172)
+light green (176, 228, 81)
+*/
 
 * {
     padding: 0;
