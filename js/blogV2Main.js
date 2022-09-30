@@ -21,8 +21,8 @@ function createImage(imagePath) {
 
 function populateBlogPage() {
     initHeader();
-    initPorfolioTiles();
     initBlogContent();
+    initPortfolioTiles();
 }
 
 populateBlogPage();

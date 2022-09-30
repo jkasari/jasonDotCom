@@ -11,13 +11,14 @@ function shuffle(arr) {
 }
 
 // Its a monstor!! I hate java script and haven't been commenting because I don't want to think about how bad my code is.
-function initPorfolioTiles() {
+function initPortfolioTiles() {
     shuffledBlogs = shuffle(blogPosts);
     let portfolioTiles = Array.from(document.getElementsByClassName("portfolio_tile"));
     portfolioTiles.forEach(tile => {
         const tileCover = document.createElement("div");
         const tileTitle = document.createElement("h4");
         const tileText = document.createElement("h3");
+        console.log(tile);
         index = portfolioTiles.indexOf(tile);
         tileTitle.innerHTML = shuffledBlogs[index].TITLE;
         tileText.innerHTML = shuffledBlogs[index].TILE_TEXT;
@@ -41,7 +42,9 @@ function initMainText() {
     document.getElementById("intro_text").innerHTML = mainText.SAMPLE_TEXT;
     document.getElementById("about_text").innerHTML = mainText.SAMPLE_TEXT;
     document.getElementById("contact_text").innerHTML = mainText.SAMPLE_TEXT;
-    initPorfolioTiles();
+    initPortfolioTiles();
 }
 
-initMainText();
+if (document.URL.includes("main")) {
+    initMainText();
+}
