@@ -2,8 +2,10 @@ let entryNum = sessionStorage.getItem("entry");
 
 function initHeader() {
     const title = document.getElementById("header_title");
+    const image = document.getElementById("header_pic");
     title.style.color = colors[blogPosts[entryNum].TITLE_COLOR];
     title.innerHTML = blogPosts[entryNum].TITLE;
+    image.src = blogPosts[entryNum].HEADER_IMAGE;
 }
 
 function initBlogContent() {
@@ -32,6 +34,7 @@ function createTitle(titleData) {
 function createText(textData) {
     const conatiner = document.getElementById("content_container");
     const text = document.createElement("p");
+    text.innerHTML = textData;
     conatiner.appendChild(text);
 }
 
