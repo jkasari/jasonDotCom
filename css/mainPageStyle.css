@@ -17,6 +17,8 @@ light green (176, 228, 81)
 .site_body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--c1-color);
+    width: 100vw;
+    height: auto;
 }
 
 .site_body img {
@@ -39,7 +41,7 @@ light green (176, 228, 81)
 }
 
 .intro {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: .5fr 1fr;
@@ -83,7 +85,7 @@ light green (176, 228, 81)
 }
 
 .portfolio_container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -129,7 +131,7 @@ light green (176, 228, 81)
 }
 
 .about {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr .5fr;
@@ -145,17 +147,20 @@ light green (176, 228, 81)
     grid-column-end: 3;
 }
 
-.contact {
-    width: 100vw;
-    height: 40vh;
-    padding: 30px;
-    box-sizing: border-box;
-
+.contact_container {
+    padding: 2% 0% 2% 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.contact_text {
-    padding: 3%;
+.contact_container h2 {
+    width: 500px;
+    color: var(--c3-color);
+    margin: 0% 4% 0% 4%;
 }
+
 
 @media only screen and (max-width: 550px) {
     .intro {
