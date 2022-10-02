@@ -1,27 +1,29 @@
 :root {
-    --c1-color: #202d31;
-    --c2-color: #F1CB24;
-    --c3-color: #C7CACC;
+    --c1-color: #C7CACC;
+    --c2-color: #202d31;
+    --c3-color: #F1CB24;
 }
 
 * {
     padding: 0;
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
-    background-color: var(--c1-color);
+    background-color: var(--c2-color);
 }
 
 .header {
     width: 100vw;
     height: auto;
     position: relative;
-    border-bottom: var(--c2-color) solid 10px;
+    border-bottom: var(--c3-color) solid 10px;
 }
 
 .header_pic {
-    max-width: 100%;
+    width: 100%;
+    background-size: cover;
 }
 
 .header_title {
@@ -30,14 +32,17 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--c3-color);
+    color: var(--c1-color);
     font-size: 500%;
+    text-align: center;
 }
 
 .content_container {
     display: flex;
+    max-width: 900px;
     flex-direction: column;
-    margin: 0% 20% 0% 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content_container img {
@@ -45,18 +50,20 @@ html {
 }
 
 .content_container h1 {
+    font-style: oblique;
     max-width: 100%;
-    background-color: var(--c3-color);
-    color: var(--c1-color);
+    background-color: var(--c1-color);
+    color: var(--c2-color);
     padding: 1% 1% 1% 5%;
-    border-bottom: var(--c1-color) solid 5px;
-    border-top: var(--c1-color) solid 5px;
+    border-bottom: var(--c2-color) solid 5px;
+    border-top: var(--c2-color) solid 5px;
 }
 
 .content_container p {
     max-width: 100%;
-    background-color: var(--c3-color);
-    color: var(--c1-color);
+    font-size: 140%;
+    background-color: var(--c1-color);
+    color: var(--c2-color);
     padding: 3% 5% 3% 5%;
     text-indent: 5%;
 }
@@ -64,7 +71,7 @@ html {
 .footer {
     width: 100vw;
     height: auto;
-    border-top: var(--c2-color) solid 10px;
+    border-top: var(--c3-color) solid 10px;
 }
 .footer_tiles {
     width: 100%;
@@ -79,7 +86,7 @@ html {
     margin: 1%;
     background-image: url("../img/trail_building_washington/moss_remove.jpg");
     background-size: cover;
-    box-shadow: 7px 7px var(--c2-color);
+    box-shadow: 7px 7px var(--c3-color);
 }
 
 .portfolio_tile div {
@@ -93,8 +100,8 @@ html {
 }
 
 .portfolio_tile div:hover {
-    color: var(-c3-color);
-    background-color: var(--c2-color);
+    color: var(--c2-color);
+    background-color: var(--c3-color);
 }
 
 .portfolio_tile div h4 {
@@ -104,7 +111,7 @@ html {
 }
 
 .portfolio_tile div:hover h4 {
-    border-bottom: var(-c3-color) solid 5px;
+    border-bottom: var(--c2-color) solid 5px;
 } 
 
 .portfolio_tile div h3 {
@@ -112,3 +119,30 @@ html {
     padding: 5% 2% 2% 2%;
 }
 
+@media only screen and (max-width: 1600px) {
+    .content_container p {
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .footer_tiles {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .portfolio_tile {
+        width: 100%;
+        height: 30vh;
+        margin: 2% 0% 2% 0%;
+    }
+    
+    .content_container {
+        margin: 0% 2% 0% 2%;
+    }
+
+    .content_container p {
+        font-size: 180%;
+    }
+}

@@ -41,7 +41,9 @@ function initMainText() {
     document.getElementById("about_picture").src = mainText.ABOUT_IMAGE;
     document.getElementById("intro_text").innerHTML = mainText.SAMPLE_TEXT;
     document.getElementById("about_text").innerHTML = mainText.SAMPLE_TEXT;
-    document.getElementById("contact_text").innerHTML = mainText.SAMPLE_TEXT;
+    document.getElementById("email").innerHTML = mainText.EMAIL;
+    document.getElementById("phone").innerHTML = mainText.PHONE;
+    document.getElementById("github").innerHTML = mainText.GITHUB;
     initPortfolioTiles();
 }
 

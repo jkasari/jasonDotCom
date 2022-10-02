@@ -2,7 +2,10 @@ let entryNum = sessionStorage.getItem("entry");
 
 function initHeader() {
     const title = document.getElementById("header_title");
+    const image = document.getElementById("header_pic");
+    title.style.color = colors[blogPosts[entryNum].TITLE_COLOR];
     title.innerHTML = blogPosts[entryNum].TITLE;
+    image.src = blogPosts[entryNum].HEADER_IMAGE;
 }
 
 function initBlogContent() {

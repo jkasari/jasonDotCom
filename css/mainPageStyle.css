@@ -1,7 +1,7 @@
 :root {
-    --c1-color: #202d31;
-    --c2-color: #F1CB24;
-    --c3-color: #C7CACC;
+    --c1-color: #C7CACC;
+    --c3-color: #F1CB24;
+    --c2-color: #202d31;
 }
 
 /*color options
@@ -16,30 +16,32 @@ light green (176, 228, 81)
 
 .site_body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--c1-color);
+    background-color: var(--c2-color);
+    width: 100vw;
+    height: auto;
 }
 
 .site_body img {
     border-radius: 1%;
     width: 100%;
-    box-shadow: 7px 7px var(--c2-color);
+    box-shadow: 7px 7px var(--c3-color);
 }
 
 .site_body p {
-    color: var(--c3-color);
-    font-size: 120%;
+    color: var(--c1-color);
+    font-size: 140%;
 }
 
 .site_body h1 {
     font-style: oblique;
-    color: var(--c3-color);
+    color: var(--c1-color);
     font-size: 40px;
     padding-left: 10%;
-    border-bottom: var(--c2-color) solid 10px;
+    border-bottom: var(--c3-color) solid 10px;
 }
 
 .intro {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: .5fr 1fr;
@@ -47,7 +49,7 @@ light green (176, 228, 81)
     grid-gap: 5%;
     padding: 3%;
     box-sizing: border-box;
-    background-color: var(--c3-color);
+    background-color: var(--c1-color);
 }
 
 .intro_text_container {
@@ -57,14 +59,15 @@ light green (176, 228, 81)
 .name {
     font-size: 600%;
     padding: 3%;
-    color: var(--c1-color);
+    color: var(--c2-color);
 }
 
 .intro_text {
-    color: var(--c1-color);
+    color: var(--c2-color);
     padding: 3%;
-    border: var(--c2-color) solid 10px;
+    border: var(--c3-color) solid 10px;
     border-radius: 1%;
+    font-size: 140%;
 }
 
 .intro_picture_container {
@@ -77,13 +80,13 @@ light green (176, 228, 81)
     font-style: oblique;
     font-size: 40px;
     padding-left: 10%;
-    border-bottom: var(--c2-color) solid 10px;
-    background-color: var(--c3-color);
-    color: var(--c1-color);
+    border-bottom: var(--c3-color) solid 10px;
+    background-color: var(--c1-color);
+    color: var(--c2-color);
 }
 
 .portfolio_container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -91,16 +94,16 @@ light green (176, 228, 81)
     grid-gap: 5%;
     padding: 5%;
     box-sizing: border-box;
-    background-image: url("../img/test_image_background.png");
+    background-image: url("../img/random/test_image_background.png");
     background-size: cover;
 }
 
 .portfolio_tile {
     color: transparent;
     padding: 2%;
-    background-image: url(img/test_image_square.jpg);
+    background-image: url("../img/test_image_square.jpg");
     background-size: cover;
-    box-shadow: 7px 7px var(--c2-color);
+    box-shadow: 7px 7px var(--c3-color);
 }
 
 .portfolio_tile div {
@@ -113,13 +116,13 @@ light green (176, 228, 81)
 }
 
 .portfolio_tile div:hover {
-    color: var(--c1-color);
-    background-color: var(--c2-color);
+    color: var(--c2-color);
+    background-color: var(--c3-color);
 }
 
 .portfolio_tile div:hover h4 {
     font-size: 220%;
-    border-bottom: var(--c1-color) solid 5px;
+    border-bottom: var(--c2-color) solid 5px;
     padding: 2% 2% 3% 2%;
 } 
 
@@ -129,7 +132,7 @@ light green (176, 228, 81)
 }
 
 .about {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr .5fr;
@@ -145,24 +148,35 @@ light green (176, 228, 81)
     grid-column-end: 3;
 }
 
-.contact {
-    width: 100vw;
-    height: 40vh;
-    padding: 30px;
-    box-sizing: border-box;
-
+.contact_container {
+    padding: 2% 0% 2% 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.contact_text {
-    padding: 3%;
+.contact_container h2 {
+    max-width: 500px;
+    color: var(--c1-color);
+    margin: 0% 4% 0% 4%;
 }
 
-@media only screen and (max-width: 550px) {
+
+@media only screen and (max-width: 650px) {
     .intro {
         height: auto;
         display: block;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
+    }
+
+    .site_body p {
+        font-size: 180%;
+    }
+    
+    .intro_text {
+        font-size: 180%;
     }
 
     .portfolio_container {
@@ -190,5 +204,20 @@ light green (176, 228, 81)
     .about_title {
         margin-top: 45%;
     }
+
+    .contact_title {
+        margin-top: 8%;
+    }
+
+    .contact_container {
+        display: block;
+    }
+
+    .contact_container h2 {
+        width: auto;
+        text-align: center;
+        padding: 1.5% 0% 1.5% 0%;
+    }
+
 }
 
