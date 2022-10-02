@@ -39,8 +39,10 @@ html {
 
 .content_container {
     display: flex;
+    max-width: 900px;
     flex-direction: column;
-    margin: 0% 25% 0% 25%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content_container img {
@@ -118,10 +120,6 @@ html {
 }
 
 @media only screen and (max-width: 1600px) {
-    .content_container {
-        margin: 0% 15% 0% 15%;
-    }
-
     .content_container p {
         font-size: 160%;
     }
