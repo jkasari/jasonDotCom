@@ -1,5 +1,4 @@
-//let entryNum = sessionStorage.getItem("entry");
-let entryNum = 0;
+let entryNum = sessionStorage.getItem("entry");
 
 function initHeader() {
     const title = document.getElementById("header_title");
