@@ -49,6 +49,6 @@ function initMainText() {
     initPortfolioTiles();
 }
 
-if (document.URL.includes("index")) {
+//if (document.URL.includes("index")) {
     initMainText();
-}
+//}
