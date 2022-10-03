@@ -34,6 +34,7 @@ function initPortfolioTiles() {
             sessionStorage.setItem("entry", e.target.id);
         });
     });
+    console.log("Initialized Portfolio tiles");
 }
 
 function initMainText() {
@@ -44,6 +45,7 @@ function initMainText() {
     document.getElementById("email").innerHTML = mainText.EMAIL;
     document.getElementById("phone").innerHTML = mainText.PHONE;
     document.getElementById("github").innerHTML = mainText.GITHUB;
+    console.log("Initialized main text and images");
     initPortfolioTiles();
 }
 
