@@ -121,6 +121,10 @@ html {
 
 @media screen and (max-width: 700px) {
 
+    .header_title {
+        font-size: 300%;
+    }
+
     .footer_tiles {
         flex-direction: column;
         height: auto;
