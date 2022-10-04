@@ -171,23 +171,19 @@ light green (176, 228, 81)
         grid-template-rows: 1fr auto;
     }
 
-    .site_body p {
-        font-size: 180%;
-    }
-    
-    .intro_text {
-        font-size: 180%;
-    }
-
     .portfolio_container {
-        grid-gap: 3%;
+        /*grid-gap: 3%;
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .portfolio_tile {
         height: 30vh;
+        margin: 3% 0% 3% 0%;
     }
 
     .header {
@@ -202,7 +198,7 @@ light green (176, 228, 81)
         grid-template-rows: auto 1fr;
     }
     .about_title {
-        margin-top: 45%;
+        margin-top: 5%;
     }
 
     .contact_title {
