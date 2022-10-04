@@ -81,8 +81,8 @@ const blogPosts = [
         "TILE_IMAGE": "img/trail_building_alaska/mini_ex.jpg",
         "HEADER_IMAGE": "img/trail_building_alaska/rock_lip.jpg",
         "CONTENT": {
-            "IMAGE_1": "img/trail_building_alaska/orange_mini.jpg",
             "TITLE_1": "This is a Test Title",
+            "IMAGE_1": "img/trail_building_alaska/orange_mini.jpg",
             "TEXT_1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "TEXT_2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "IMAGE_2": "img/trail_building_alaska/pump_track.jpg",
