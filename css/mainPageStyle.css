@@ -171,11 +171,11 @@ light green (176, 228, 81)
         grid-template-rows: 1fr auto;
     }
 
+    .site_body p {
+        font-size: 100%;
+    }
+
     .portfolio_container {
-        /*grid-gap: 3%;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
         height: auto;
         display: flex;
         flex-direction: column;

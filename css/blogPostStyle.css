@@ -125,6 +125,10 @@ html {
         font-size: 300%;
     }
 
+    .content_container p {
+        font-size: 100%;
+    }
+
     .footer_tiles {
         flex-direction: column;
         height: auto;
