@@ -39,7 +39,7 @@ const blogPosts = [
         "ID": "1",
         "TITLE": "Binary Clock",
         "TITLE_COLOR": "COLOR_3",
-        "TILE_TEXT": "- A small blerb about that thing I did.",
+        "TILE_TEXT": "- Using colors to represent binary, and binary to represent time.",
         "TILE_IMAGE": "img/binary_clock/clock.gif",
         "HEADER_IMAGE": "img/binary_clock/title-image.jpg",
         "CONTENT": {
@@ -188,7 +188,7 @@ const blogPosts = [
             "TITLE_4": "Future",
             "TEXT_8": "This has been a pretty diverse project, and I used a lot of different skills on it. I have had to use mechanical problem-solving to attach the physical lights and wires. I obviously had to use electrical engineering to make everything light up paired with some basic Arduino code. I had to use 3D modeling to create the tail lights. Above all, I have had to use management to keep myself on track and make sure I end up with a working system! ",
             "TEXT_9": "Looking into the future, there is still a way to go before it’s done. First off, I need to finish version one of the battery system. Once that is in place I can begin experimenting with wait times for keeping the lights on. Aside from this, I need to continue to tweak the algorithm in charge of turning the lights on and off. Currently, it takes an average of the light readings over the last 10 seconds, but this sometimes turns the lights on at odd times. Next, I really need to make the tail lights just a tad bit brighter. Once this is all done I plan on using the system and continuing to tweak it. I hope to then use the skills future me has acquired to make a final version that is a fraction of the size. Once that is done, I will never have to think about bike lights again!!",
-            "IMGAGE_5": "img/bike_lights/rear-lights-side.jpg",
+            "IMAGE_5": "img/bike_lights/rear-lights-side.jpg",
         }
     }
 ];
