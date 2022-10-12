@@ -14,8 +14,24 @@ html {
     background-color: var(--c2-color);
 }
 
-.header {
+.blog_post_body {
     width: 100vw;
+}
+
+.home_button {
+    top: 0%;
+    z-index: 5;
+    position: sticky;
+    display: block;
+    padding: .2% 0% .2% 5%;
+    color: var(--c2-color);
+    background-color: #F1CB24;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
     height: auto;
     position: relative;
     border-bottom: var(--c3-color) solid 10px;
@@ -69,7 +85,7 @@ html {
 }
 
 .footer {
-    width: 100vw;
+    width: 100%;
     height: auto;
     border-top: var(--c3-color) solid 10px;
 }
