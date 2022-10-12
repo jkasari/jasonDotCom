@@ -54,7 +54,7 @@ html {
     max-width: 100%;
     background-color: var(--c1-color);
     color: var(--c2-color);
-    padding: 1% 1% 1% 5%;
+    padding: 2% 1% 2% 5%;
     border-bottom: var(--c2-color) solid 5px;
     border-top: var(--c2-color) solid 5px;
 }
@@ -64,7 +64,7 @@ html {
     font-size: 140%;
     background-color: var(--c1-color);
     color: var(--c2-color);
-    padding: 1% 5% 1% 5%;
+    padding: 2% 5% 2% 5%;
     text-indent: 5%;
 }
 
