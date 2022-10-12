@@ -14,8 +14,24 @@ html {
     background-color: var(--c2-color);
 }
 
-.header {
+.blog_post_body {
     width: 100vw;
+}
+
+.home_button {
+    top: 0%;
+    z-index: 5;
+    position: sticky;
+    display: block;
+    padding: .2% 0% .2% 5%;
+    color: var(--c2-color);
+    background-color: #F1CB24;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
     height: auto;
     position: relative;
     border-bottom: var(--c3-color) solid 10px;
@@ -54,7 +70,7 @@ html {
     max-width: 100%;
     background-color: var(--c1-color);
     color: var(--c2-color);
-    padding: 1% 1% 1% 5%;
+    padding: 2% 1% 2% 5%;
     border-bottom: var(--c2-color) solid 5px;
     border-top: var(--c2-color) solid 5px;
 }
@@ -64,12 +80,12 @@ html {
     font-size: 140%;
     background-color: var(--c1-color);
     color: var(--c2-color);
-    padding: 3% 5% 3% 5%;
+    padding: 2% 5% 2% 5%;
     text-indent: 5%;
 }
 
 .footer {
-    width: 100vw;
+    width: 100%;
     height: auto;
     border-top: var(--c3-color) solid 10px;
 }
