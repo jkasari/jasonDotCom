@@ -191,12 +191,22 @@ light green (176, 228, 81)
         grid-column-end: 1;
     }
     
-    .about {
+    /*.about {
         height: auto;
         grid-gap: 5%;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
+    }*/
+
+    .about {
+        display: flex;
+        flex-direction: column;
     }
+
+    .about p {
+        padding: 3% 0% 5% 0%;
+    }
+
     .about_title {
         margin-top: 5%;
     }

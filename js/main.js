@@ -42,6 +42,7 @@ function initMainText() {
     document.getElementById("about_picture").src = mainText.ABOUT_IMAGE;
     document.getElementById("intro_text").innerHTML = mainText.INTRO_TEXT;
     document.getElementById("about_text").innerHTML = mainText.ABOUT_TEXT;
+    document.getElementById("linkedin").innerHTML = mainText.LINKEDIN;
     document.getElementById("email").innerHTML = mainText.EMAIL;
     document.getElementById("phone").innerHTML = mainText.PHONE;
     document.getElementById("github").innerHTML = mainText.GITHUB;
