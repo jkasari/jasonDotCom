@@ -15,6 +15,7 @@ function initBlogContent() {
         if (item.includes("TITLE")) { createTitle(content[item]); }
         if (item.includes("TEXT")) { createText(content[item]); }
     }
+    createText("");
 }
 
 function createImage(imagePath) {
