@@ -19,11 +19,8 @@ html {
 }
 
 .home_button {
-    top: 0%;
-    z-index: 5;
-    position: sticky;
-    display: block;
-    padding: .2% 0% .2% 5%;
+    position: fixed;
+    padding: .5% 1.5% .6% 1.5%;
     color: var(--c2-color);
     background-color: #F1CB24;
     font-weight: bolder;
@@ -43,7 +40,6 @@ html {
 }
 
 .header_title {
-    position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
