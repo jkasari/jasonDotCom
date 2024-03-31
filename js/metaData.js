@@ -71,7 +71,7 @@ const blogPosts = [
             "IMAGE_6": "img/binary_clock/inside.jpg",
             "TITLE_4": "Future",
             "TEXT_11": "For now, the clock works, and I use it every day to tell time. I have far surpassed my original goal, but I’m still not quite satisfied. I plan to revisit this project in the next few years as I gain more knowledge. I would really like to design and manufacture a specific board for it. This would allow me to make the design much sleeker which I think would be cool. On the software aspect, there is so much room to improve! I learned a lot about c++ while working on the project, but the language has so much more that I haven’t even touched yet. I’m sure that I can cram more functionality into this thing without using more memory. I had a ton of fun working on this, and cannot wait to revisit it with new knowledge!",
-            "IMAGE_10": "img/binary_clock/v2.jpg",
+            "IMAGE_10": "img/binary_clock/binary-clock-pcb.jpg",
 
         },
     },
@@ -196,6 +196,8 @@ const blogPosts = [
             "TITLE_4": "Future",
             "TEXT_9": "Looking into the future, there are still steps to take before I’d call it complete. First off, I need to finish version one of the battery system. Once that is in place I can begin experimenting with wait times for keeping the lights on. Aside from this, I need to continue to adjust the algorithm in charge of turning the lights on and off. Currently, it takes an average of the light readings over the last 10 seconds, but this sometimes turns the lights on at odd times. Next, I really need to make the tail lights just a tad bit brighter. I hope to then use the skills I develop in the future to make a final version that is a fraction of the size. Once that is done, I will never have to think about bike lights again!",
             "IMAGE_5": "img/bike_lights/rear-lights-side.jpg",
+            "IMAGE_6": "img/bike_lights/bike-lights-case.jpg",
+            "IMAGE_7": "img/bike_lights/bike-lights-pcb.jpg",
         }
     }
 ];
