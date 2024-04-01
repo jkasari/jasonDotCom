@@ -192,12 +192,10 @@ const blogPosts = [
             "IMAGE_4": "img/bike_lights/bike-lights-board.jpg",
             "TEXT_7": "As it sits currently, the system is working and has been in use for a couple of months. The battery system is not hooked up yet, as I’ve been waiting for the motivation of winter to tackle this. Aside from that, the rest of the system works flawlessly, and it turns out that automatic bike lights are pretty consistently useful. I no longer have to even consider lighting when I cruise around after dark. Even going under a tunnel, the lights flick on and then off again as I exit. I’m excited to continue the project and can’t wait for an even more refined product!",
             "TITLE_3": "Skills Used",
-            "TEXT_8": "This has been a pretty diverse project, and I used a lot of different skills on it, such as mechanical problem-solving to attach the physical lights and wires. I obviously had to use electrical engineering to make everything light-up paired with some basic Arduino code. I used 3D modeling to create the tail lights. Above all, I have had to use management to keep myself on track and make sure I ended up with a working system! ",
+            "TEXT_8": "This has been a pretty diverse project, and I used a lot of different skills on it, such as mechanical problem-solving to attach the physical lights and wires. I obviously had to use embedded engineering to make the pcb board, paired with some basic Arduino code. I used 3D modeling to create the tail lights. Above all, I have had to use management to keep myself on track and make sure I ended up with a working system! ",
             "TITLE_4": "Future",
             "TEXT_9": "Looking into the future, there are still steps to take before I’d call it complete. First off, I need to finish version one of the battery system. Once that is in place I can begin experimenting with wait times for keeping the lights on. Aside from this, I need to continue to adjust the algorithm in charge of turning the lights on and off. Currently, it takes an average of the light readings over the last 10 seconds, but this sometimes turns the lights on at odd times. Next, I really need to make the tail lights just a tad bit brighter. I hope to then use the skills I develop in the future to make a final version that is a fraction of the size. Once that is done, I will never have to think about bike lights again!",
             "IMAGE_5": "img/bike_lights/rear-lights-side.jpg",
-            "IMAGE_6": "img/bike_lights/bike-lights-case.jpg",
-            "IMAGE_7": "img/bike_lights/bike-lights-pcb.jpg",
         }
     }
 ];
