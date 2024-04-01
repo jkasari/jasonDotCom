@@ -68,10 +68,9 @@ const blogPosts = [
             "TITLE_3": "Skills Used",
             "TEXT_10": "Because I worked this project early on, I was exposed to many concepts for the first time during the build. This was my first time working with i2c and Arduinos Wire library. This was also both the biggest electronic and software project I had taken at the time. Developing the software made me much more comfortable with the underlying concepts behind c++. The program is heavy for an Arduino Nano and I had to go back multiple times to better allocate memory to save space. Building the electronic side showed me how tedious soldering PCB boards is. This showed me the importance of learning to design my own printed PCB boards. The case gave me a good intro to Fusion 360 and 3D modeling. The previous 3D modeling software I had used was AutoCad back in High School. Above all, this project gave me so much problem-solving experience. ",
             "IMAGE_7": "img/binary_clock/3d-printing.jpg",
-            "IMAGE_6": "img/binary_clock/inside.jpg",
+            "IMAGE_6": "img/binary_clock/binary-clock-pcb.jpg",
             "TITLE_4": "Future",
             "TEXT_11": "For now, the clock works, and I use it every day to tell time. I have far surpassed my original goal, but I’m still not quite satisfied. I plan to revisit this project in the next few years as I gain more knowledge. I would really like to design and manufacture a specific board for it. This would allow me to make the design much sleeker which I think would be cool. On the software aspect, there is so much room to improve! I learned a lot about c++ while working on the project, but the language has so much more that I haven’t even touched yet. I’m sure that I can cram more functionality into this thing without using more memory. I had a ton of fun working on this, and cannot wait to revisit it with new knowledge!",
-            "IMAGE_10": "img/binary_clock/binary-clock-pcb.jpg",
 
         },
     },
